@@ -7,6 +7,7 @@ namespace ControlWork1
     {
         static void Main(string[] args)
         {
+            //Задание 1
             int[] newintegerarray = new int[14];
             int i = 0;
 
@@ -45,6 +46,9 @@ namespace ControlWork1
                     Console.WriteLine(item);
                 }
             }
+            
+            //Задание 2
+            
         }
     }
 }
