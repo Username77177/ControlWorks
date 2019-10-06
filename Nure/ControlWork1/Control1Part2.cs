@@ -40,7 +40,7 @@ namespace ControlWork1
             
             foreach (int item in succesfulint)
             {
-                if (succesfulint.Contains(item) == false)
+                if (succesfulintsorted.Contains(item) == false)
                 {
                     succesfulintsorted.Add(item);
                     Console.WriteLine(item);
