@@ -24,7 +24,7 @@ namespace ControlWork1
 
             /*4. Знайти індекс найбільшого числа в масиві. 
                 Якщо таких чисел декілька, знайти індекс першого з них. */
-            Console.WriteLine("4 задание");
+            Console.WriteLine("\n4 задание");
             Fourthexercise.fo_ex();
         }
     }

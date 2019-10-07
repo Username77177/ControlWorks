@@ -6,21 +6,39 @@ namespace ControlWork1
         public static void sec_ex()
         {
             //Задание 2
-            double result = 1, result1 = 0;
+            double sum = 0;
             Console.WriteLine("Введите значение n: ");
-            int it = Convert.ToInt32(Console.ReadLine());
-            while (it != 1)
+            double it = Convert.ToInt32(Console.ReadLine());
+            for (double n = it; n >= 1; n--)
             {
-                //n!
-                result = result * it; //Факториал
+                double b = 1;
                 //(-1)^n
-                double negativeornot = Math.Pow(-1, Convert.ToDouble(it)); //Числитель
-                //Fraction
-                result1 += negativeornot / result; //Сумма
-                it -= 1;
+                double a = Math.Pow(-1,n);
+
+                //n!
+                double i1 = n;
+                while (i1 != 1)
+                {
+                    b *= i1; // 1 * n * (n-1) * (n-2) * (n-3).. * 1 = n!
+                    i1--;
+                }
+
+                sum += a/b;
             }
 
-            Console.WriteLine("Сумма ряда ((-1)^n)/n! = " + (result1 - 1) + ", при n = " + it);
+            Console.WriteLine("Сумма ряда ((-1)^n)/n! = " + sum + ", при n = " + it);
         }
     }
 }
+
+
+// while (it <= 0)
+// {
+//     //n!
+//     result = result * it; //Факториал
+//     //(-1)^n
+//     double negativeornot = Math.Pow(-1, Convert.ToDouble(it)); //Числитель
+//     //Fraction
+//     sum += negativeornot / result; //Сумма
+//     it -= 1;
+// }
